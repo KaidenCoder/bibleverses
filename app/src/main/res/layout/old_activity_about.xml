@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="@string/this_app_is_developed_by_kurosaki_copyright_2018"/>
+        <TextView
+            android:id="@+id/about_second_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/photo"/>
+        <TextView
+            android:id="@+id/about_third_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="@string/translation"/>
+        <TextView
+            android:id="@+id/about_fouth_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:text="Send your Bible Story to sandipsinghakhaidem@gmail.com Your bible story should contain 1) Title of your story, 2) Your name, 3) Bible verse, 4) Your story with reference to the Bible Verse. You can send your story in Manipuri or English language."/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:id="@+id/button"
+            android:textColor="@android:color/background_dark"
+            android:text="Send your bible story"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

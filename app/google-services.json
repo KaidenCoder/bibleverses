@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "816251552853",
+    "firebase_url": "https://manipuribibleverse.firebaseio.com",
+    "project_id": "manipuribibleverse",
+    "storage_bucket": "manipuribibleverse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816251552853:android:68c10004764444ad",
+        "android_client_info": {
+          "package_name": "com.manipuribible.kurosaki.manipuribibleverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816251552853-kijep9m4kam2tdek1mindl2nejqi47fn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manipuribible.kurosaki.manipuribibleverse",
+            "certificate_hash": "145036d91b928be1fe5785b871df67c0986c6fee"
+          }
+        },
+        {
+          "client_id": "816251552853-iggkriqp045bgt6vhum2afklarfbbfoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCElLFrSEWy8puWQKspgOjgYw383pJ4_VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816251552853-iggkriqp045bgt6vhum2afklarfbbfoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

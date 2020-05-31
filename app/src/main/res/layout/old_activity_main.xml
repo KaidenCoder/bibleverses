@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#566573 "
+        tools:context=".MainActivityyy">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/eight_dp"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginStart="@dimen/eight_dp"
+            android:layout_marginTop="@dimen/four_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="@dimen/four_dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_ad_unit_id">
+                </com.google.android.gms.ads.AdView>
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/these_are_collection_of_bible_verses_on_topics_to_inspire_you_on_your_daily_life"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sixteen_dp"
+                    android:paddingRight="@dimen/eight_dp"
+                    android:paddingEnd="@dimen/eight_dp"
+                    android:paddingStart="@dimen/sixteen_dp"
+                    android:paddingBottom="@dimen/eight_dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/eight_dp"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginStart="@dimen/eight_dp"
+            android:layout_marginTop="@dimen/four_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            card_view:cardCornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_info">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blogTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eighty_eight_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twenty_four_dp"
+                    android:paddingTop="@dimen/sixteen_dp"
+                    android:text="BIBLE BLOG AND GOSPELS"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:contentDescription="@string/verses_on_hope"
+                    android:layout_width="@dimen/sixty_seven_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingBottom="24dp"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/blog" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_prayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/eight_dp"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginStart="@dimen/eight_dp"
+            android:layout_marginTop="@dimen/four_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            card_view:cardCornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_blog">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eighty_eight_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twenty_four_dp"
+                    android:paddingTop="@dimen/sixteen_dp"
+                    android:text="PRABHUGI HAIJABA"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:contentDescription="@string/verses_on_hope"
+                    android:layout_width="@dimen/sixty_seven_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingBottom="24dp"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/biblepray" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frame_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/eight_dp"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginStart="@dimen/eight_dp"
+            android:layout_marginTop="@dimen/four_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            card_view:cardCornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_prayer">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ten_commandments"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eighty_eight_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twenty_four_dp"
+                    android:paddingTop="@dimen/sixteen_dp"
+                    android:text="YATHANG TARA"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:contentDescription="@string/verses_on_hope"
+                    android:layout_width="@dimen/sixty_seven_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingBottom="24dp"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ten" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.liuzhuang.afgridlayout.AutoFitGridLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="32dp"
+            android:background="#2C3E50"
+            app:columnCount="2"
+            app:horizontalSpace="6dp"
+            app:verticalSpace="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_ten">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_hope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/hope"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/eighty_eight_dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/twenty_four_dp"
+                            android:paddingTop="@dimen/sixteen_dp"
+                            android:text="@string/verses_on_hope"
+                            android:textAllCaps="true" />
+
+                        <!--<ImageView-->
+                            <!--android:contentDescription="@string/verses_on_hope"-->
+                            <!--android:layout_width="@dimen/sixty_seven_dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="8dp"-->
+                            <!--android:layout_marginStart="8dp"-->
+                            <!--android:background="?android:attr/selectableItemBackground"-->
+                            <!--android:paddingBottom="24dp"-->
+                            <!--android:paddingTop="16dp"-->
+                            <!--android:paddingLeft="8dp"-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_love"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_hope">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/love"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_love"
+                            android:textAllCaps="true" />
+
+
+                      <!--  <ImageView
+                            android:contentDescription="@string/verses_on_love"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_love">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/reject"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="Yabidaba"
+                            android:textAllCaps="true" />
+
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_love"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_dating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_reject">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dating"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="Unabagi"
+                            android:textAllCaps="true" />
+
+
+                        <!--<ImageView-->
+                            <!--android:contentDescription="@string/verses_on_love"-->
+                            <!--android:layout_width="@dimen/sixty_seven_dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="8dp"-->
+                            <!--android:layout_marginStart="8dp"-->
+                            <!--android:background="?android:attr/selectableItemBackground"-->
+                            <!--android:paddingBottom="24dp"-->
+                            <!--android:paddingTop="16dp"-->
+                            <!--android:paddingLeft="8dp"-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_anti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_dating">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/anti_christ"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="Anti-Khrista"
+                            android:textAllCaps="true" />
+
+
+                       <!-- <ImageView
+                            android:contentDescription="@string/verses_on_love"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_anxiety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_anti">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/anxiety"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_anxiety"
+                            android:textAllCaps="true"/>
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_anxiety"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_bad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_anxiety">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bad_language"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="Aremba wa"
+                            android:textAllCaps="true"/>
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_anxiety"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_fear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_bad">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fear"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_fear"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_fear"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_employment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_fear">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/employment"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="Thabak"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_fear"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_feelings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_employment">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/feelings"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_feelings"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_feelings"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_friendship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_feelings">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/friendship"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_friendship"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_friendship"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_diligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_friendship">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/diligence"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_diligence"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_diligence"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/frame_obedience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginStart="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/four_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/frame_diligence"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/obedience"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/verses_on_obedience"
+                            android:textAllCaps="true"/>
+
+                        <!--<ImageView
+                            android:contentDescription="@string/verses_on_obedience"
+                            android:layout_width="@dimen/sixty_seven_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingBottom="24dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bibleice" />-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+        </com.liuzhuang.afgridlayout.AutoFitGridLayout>
+
+
+        <!--<com.google.android.gms.ads.formats.AdChoicesView-->
+            <!--android:id="@+id/adView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--ads:adSize="BANNER"-->
+            <!--ads:adUnitId="@string/banner_ad_unit_id"/>-->
+        <!---->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

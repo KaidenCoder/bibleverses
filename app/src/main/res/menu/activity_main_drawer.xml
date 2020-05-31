@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="GOSPELS">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/ten_com"
+                android:icon="@drawable/ic_book_black_24dp"
+                android:title="YATHANG TARA" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/love"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="NUNGSHIBA" />
+        <item
+            android:id="@+id/reject"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="YABIDABA" />
+        <item
+            android:id="@+id/bad_language"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="AREMBA WA" />
+
+        <item
+            android:id="@+id/anxiety"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="PUKNING WABA" />
+        <item
+            android:id="@+id/diligence"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="HOTNABA KANBA" />
+        <item
+            android:id="@+id/obedience"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="HAIBA INBA" />
+        <item
+            android:id="@+id/fear"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="AKIBA" />
+
+        <item
+            android:id="@+id/work"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="THABAK" />
+
+        <item
+            android:id="@+id/feelings"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="WAKHAL" />
+
+        <item
+            android:id="@+id/friend"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="MARUP OIBA" />
+        <item
+            android:id="@+id/dating"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="UNABAGI" />
+
+        <item
+            android:id="@+id/anti"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="ANTI_KHRISTA" />
+<!--        <item-->
+<!--            android:id="@+id/nav_theslon_two"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="II Theslonikiya" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_timothy_one"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="I Timothiya" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_timothy_two"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="II Timothiya" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_tita"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Tita" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_philimon"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Philimon" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_ibriya"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Ibriya" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_jakob"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Jakob" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_pitar_one"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="I Pitar" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_pitar_two"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="II Pitar" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_johan_one"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="I Johan" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_johan_two"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="II Johan" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_johan_three"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="III Johan" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_jihuda"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Jihuda" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_phondokpiba"-->
+<!--            android:icon="@drawable/ic_book_black_24dp"-->
+<!--            android:title="Phongdokpiba wa" />-->
+
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="ABOUT" />
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Share" />-->
+        </menu>
+    </item>
+
+</menu>

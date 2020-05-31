@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manipuribible.kurosaki.manipuribibleverse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/bibleicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bibleicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+<!--        <activity-->
+<!--            android:name=".SplashScreenActivity"-->
+<!--            android:theme="@style/SplashScreenTheme">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".Phongdokpiba.RevealationsMainActivity"></activity>
+        <activity android:name=".Jihuda.JudeMainActivity" />
+        <activity android:name=".Johan_Three.Johan3MainActivity" />
+        <activity android:name=".Johan_Two.Johan2MainActivity" />
+        <activity android:name=".Johan_One.Johan1MainActivity" />
+        <activity android:name=".Pitar_Two.Peter2MainActivity" />
+        <activity android:name=".Pitar_One.Peter1MainActivity" />
+        <activity android:name=".Jakob.JakobMainActivity" />
+        <activity android:name=".Ibriya.HebrewsMainActivity" />
+        <activity android:name=".Philimon.PhilimonMainActivity" />
+        <activity android:name=".Tita.TitusMainActivity" />
+        <activity android:name=".Timothy_Two.Timothy2MainActivity" />
+        <activity android:name=".Timothy_One.Timothy1MainActivity" />
+        <activity android:name=".Theslon_Two.Theslok2MainActivity" />
+        <activity android:name=".Theslon_One.Theslok1MainActivity" />
+        <activity android:name=".Kolosiya.CollosiansMainActivity" />
+        <activity android:name=".Philippiya.PhillipiyaMainActivity" />
+        <activity android:name=".Ephisa.EphisaMainActivity" />
+        <activity android:name=".Galatiya.GalatiyaMainActivity" />
+        <activity android:name=".Korin_Two.Corin2MainActivity" />
+        <activity android:name=".Korin_One.Corin1MainActivity" />
+        <activity android:name=".Romiya.RomansMainActivity" />
+        <activity android:name=".Pakhonchatpasinggi.ActsMainActivity" />
+        <activity android:name=".Luk.LukMainActivity" />
+        <activity android:name=".Mark.MarkMainActivity" />
+        <activity android:name=".Matthi.MatthiMainActivity" />
+        <activity
+            android:name=".john.JohnMainActivity"
+            android:label="Johan" />
+        <activity
+            android:name=".verses.Asha"
+            android:label="ASHA (HOPE)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.AntiChrist"
+            android:label="ANTI-KHRISTA"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.BadLanguage"
+            android:label="AREMBA WA (BAD LANGUAGE)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Diligence"
+            android:label="HOTNABA KANBA (DILIGENCE)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Fear"
+            android:label="AKIBA (FEAR)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Friendship"
+            android:label="MARUP OIBA (FRIENDSHIP)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Love"
+            android:label="NUNGSHIBA (LOVE)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Obedience"
+            android:label="HAIBA INBA (OBEDIENCE)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.PukningWaba"
+            android:label="PUKNING WABA (ANXIETY)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Reject"
+            android:label="YABIDABA (REJECTION)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Unabagi"
+            android:label="UNABAGI (DATING)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Wakhal"
+            android:label="WAKHAL (THOUGHTS)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.Work"
+            android:label="THABAK (WORK)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verses.TenCommandments"
+            android:label="YATHANG TARA (THE TEN COMMANDMENTS)"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:label="ABOUT THE APP"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>
